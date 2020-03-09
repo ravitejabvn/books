@@ -1,0 +1,113 @@
+.header {
+  height: 60px;
+  background: #25ad9f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box {
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 5px;
+  border-style: none;
+  padding: 2px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.book-container {
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.03);
+  padding: 5px;
+  min-height: 200px;
+  img {
+    width: 130px;
+    display: inline-block;
+  }
+  .book-details {
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 140px);
+    p {
+      margin-bottom: 0px;
+      word-break: break-all;
+    }
+    .rating {
+      background: #428bca;
+      border-radius: 3px;
+      width: 40px;
+      height: 20px;
+      display: inline-block;
+      line-height: 20px;
+      text-align: center;
+      align-items: center;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .review {
+      color: #878787;
+      margin-left: 5px;
+    }
+  }
+}
+
+.search-container {
+  position: relative;
+  width: 50%;
+  .search-load-icon {
+    position: absolute;
+    right: 25px;
+    font-size: 18px;
+    color: #25ad9f;
+  }
+  .search-icon {
+    position: absolute;
+    right: 5px;
+    font-size: 18px;
+    color: #25ad9f;
+    cursor: pointer;
+  }
+  .search-complete {
+    position: absolute;
+    background: #ffffff;
+    top: 26px;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.3);
+    li {
+      list-style: none;
+      border-bottom: 1px solid #efebeb;
+      padding: 4px;
+      cursor: pointer;
+      &:hover {
+          font-weight: bold;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.results-container {
+  height: 40px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  span {
+    flex: 1;
+  }
+  label {
+    font-weight: 500;
+  }
+}
