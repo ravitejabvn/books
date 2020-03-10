@@ -37,6 +37,11 @@
       margin-bottom: 0px;
       word-break: break-all;
     }
+    .book-title {
+      color: #25ad9f;
+      cursor: pointer;
+      font-weight: 500;
+    }
     .rating {
       background: #428bca;
       border-radius: 3px;
@@ -110,4 +115,10 @@
   label {
     font-weight: 500;
   }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
